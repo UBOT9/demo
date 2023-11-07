@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+<input type="text" #name placeholder="Enter Your Name" name="Name"><br>
+<input type="text" #email placeholder="Enter Your email" name="email"><br>
+
+<input type="password" placeholder="Enter Your password" name="password"><br>
+<button (click)="getvalue(name.value,email.value)">Register</button><br>
+<h1>Your Register Data</h1>
+<p>Name:{{displayname}}</p>
+<p>Email:{{displayemail}}</p>
+
+
+
+
+export class AppComponent {
+  title = 'Login Page';
+  displayname="";
+  displayemail="";
+
+  getvalue(name : string,email:string){
+    this.displayname=name;
+    this.displayemail=email;
+  }

@@ -1,0 +1,17 @@
+.nav-link{
+    color: white;
+    font-size: 30px;
+}
+.nav-item{
+    margin-top: 35px;
+}
+.sidebar{
+    height: 740px;
+}
+.card{
+    padding: 10px;
+    margin: 20px;
+}
+.row{
+    background-color: #f4f4f4;
+}
